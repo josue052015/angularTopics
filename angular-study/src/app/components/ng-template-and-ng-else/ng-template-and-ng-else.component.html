@@ -1,0 +1,13 @@
+<h1>ng template and ng else</h1>
+
+<!-- this work thanks to local reference "#" and this allow to make a reference only in the html elements
+note: local reference works in ng-template, template forms, ect   -->
+
+<div *ngIf="title; else message ">
+    Hay un titulo
+</div>
+
+<ng-template #message>No hay ningun titulo</ng-template>
+
+
+<button (click)="setTitle()">set title</button>

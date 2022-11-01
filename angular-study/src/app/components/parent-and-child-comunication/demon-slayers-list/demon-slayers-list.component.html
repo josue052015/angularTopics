@@ -1,0 +1,7 @@
+<h1>Demon Slayers</h1>
+<ul>
+    <li *ngFor="let item of demonSlayers">{{item.name}} - {{item.rank}}</li>
+</ul>
+
+<app-add-demon-slayer-form [demonSlayers]="demonSlayers"></app-add-demon-slayer-form>
+<app-add-demon-slayer-with-output (onDemonSlayerSubmit) = "getDemonSlayerFromChild($event)"></app-add-demon-slayer-with-output>

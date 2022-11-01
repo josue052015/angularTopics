@@ -1,0 +1,8 @@
+notas del curso de angular 
+
+para ponerle un alias a alguna propiedad sacada de una destructuracion solo tienes que hacer "const {lugarNacimiento: nacionalidad} = persona" (los ":" en destructuracion es para ponerle el alias
+a la propiedad extraida, no es un tipado).
+
+en las propiedades de una clase un getter es crear una propiedad que cuando se llame sera procesada (cuando llames a la propiedad el valor que retorne sera 
+procesado primero en el get). Un setter es algo que se va a ejecutar cuando le asignes un valor a esa propiedad (por ejemplo si quieres que se ejecute una funcion
+cuando se le cambie el valor a esa propiedad)

@@ -1,0 +1,26 @@
+
+<h1>Forms module</h1>
+
+<!-- this is used for put a line bellow something -->
+<hr>
+
+<!-- meanwhile we have a problem with the event of this form, because every time we do a submit the event is refreshing
+the page and that is not a good idea in this case. The solucion is in the handleSubmit method-->
+
+<h4>Normal form</h4>
+
+<form (submit)="handleSubmit($event)">
+    <input type="text" placeholder="ingrese nombre">
+    <input type="text" placeholder="ingrese apellido">
+    <button type="submit">Submit</button>
+</form>
+
+<!-- we can avoid the same problem using FormsModule as well -->
+
+<h4>FormsModule from angular</h4>
+
+<form (ngSubmit)="handleFormsModuleSubmit()">
+    <input type="text" placeholder="ingrese nombre">
+    <input type="text" placeholder="ingrese apellido">
+    <button type="submit">Submit</button>
+</form>

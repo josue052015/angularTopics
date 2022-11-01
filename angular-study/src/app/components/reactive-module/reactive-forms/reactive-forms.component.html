@@ -1,0 +1,10 @@
+<h1>Reactive Forms Example</h1>
+
+<form (ngSubmit)="handleSubmit()" [formGroup]="demonSlayerForm">
+    <input type="text" placeholder="name" formControlName = "name">
+    <span *ngIf="fieldIsInvalid('name')">this is invalid</span>
+    <br/>
+    <input type="text" placeholder="rank" formControlName = "rank">
+    <span *ngIf="fieldIsInvalid('rank')">this is invalid</span>
+    <button type="submit">Submit</button>
+</form>
