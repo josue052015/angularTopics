@@ -1,0 +1,7 @@
+<p [ngClass]="{'selected': selected}" (click)="selected = !selected">NG CLASS</p>
+
+<div [class.background-color]="selected">color when is selected</div>
+
+<!-- get a class from typescript method  -->
+
+<div [class]="getClass('red')">color from ts method</div>

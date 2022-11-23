@@ -12,6 +12,10 @@ import { NgTemplateAndNgElseComponent } from './components/ng-template-and-ng-el
 import { ComponentWithModuleComponent } from './components/component-with-module/component-with-module.component';
 import { ComponentWithModuleModule } from './components/component-with-module/component-with-module.module';
 import { ViewchildExampleComponent } from './components/viewchild-example/viewchild-example.component';
+import { ClassesManagementComponent } from './components/classes-management/classes-management.component';
+import { RxjsComponent } from './components/rxjs/rxjs.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PipesComponent } from './components/pipes/pipes.component';
 
 
 @NgModule({
@@ -21,6 +25,9 @@ import { ViewchildExampleComponent } from './components/viewchild-example/viewch
     StateChangesComponent,
     NgTemplateAndNgElseComponent,
     ViewchildExampleComponent,
+    ClassesManagementComponent,
+    RxjsComponent,
+    PipesComponent,
   
   ],
   imports: [
@@ -29,7 +36,8 @@ import { ViewchildExampleComponent } from './components/viewchild-example/viewch
     ComponentWithModuleModule,
     FormsModuleModule,
     ParentAndChildComunicationModule,
-    ReactiveModuleModule
+    ReactiveModuleModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

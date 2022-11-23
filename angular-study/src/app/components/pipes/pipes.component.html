@@ -1,0 +1,10 @@
+<hr>
+<h1>pipes</h1>
+<br/>
+<p>date normal: {{date | date}}</p>
+<p>format date: {{date | date:'MM/dd/YYYY'}}</p>
+<!-- the number pipe rounds the decimal amounts -->
+<p>number pipe: {{amount | number}}</p>
+<!-- the first position '1.2-2' in our case is "1" is for indicate that we want the integer amount but we can put '.2-2' as well -->
+<!-- '.2-2' is to indicate the rank of decimals -->
+<p>format number pipe: {{amount | number:'1.2-2'}}</p>

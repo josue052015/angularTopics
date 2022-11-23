@@ -1,10 +1,29 @@
 <h1>Reactive Forms Example</h1>
 
 <form (ngSubmit)="handleSubmit()" [formGroup]="demonSlayerForm">
-    <input type="text" placeholder="name" formControlName = "name">
+    <input type="text" placeholder="name" formControlName="name">
     <span *ngIf="fieldIsInvalid('name')">this is invalid</span>
-    <br/>
-    <input type="text" placeholder="rank" formControlName = "rank">
+    <br />
+    <input type="text" placeholder="rank" formControlName="rank">
     <span *ngIf="fieldIsInvalid('rank')">this is invalid</span>
+    <br />
+    <h4>Assistants</h4>
+    <!-- as newAssistant is not into the formGroup, instead of set the "formControlName" property we have to set the "formControl" property-->
+    <input type="text" placeholder="Add Assistant" [formControl]="newAssistant" (keyup.enter)="addAssistant()">
+    <span *ngIf="newAssistant.errors && newAssistant.touched">this is invalid</span>
+    <button type="button" (click)="addAssistant()">Add</button>
+    <br />
+    <br />
+
+    <div formArrayName="assistants">
+        <div *ngFor="let assistant of assistantsArray.controls; let i = index">
+            <input placeholder="assistant" [formControlName]="i">
+            <!--  <span>this is invalid</span> -->
+            <button type="button" (click)="deleteAssistant(i)">Delete</button>
+        </div>
+    </div>
+
+    <br />
+
     <button type="submit">Submit</button>
 </form>
