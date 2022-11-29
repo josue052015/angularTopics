@@ -5,14 +5,18 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './pipes.component.html',
   styleUrls: ['./pipes.component.scss']
 })
-export class PipesComponent implements OnInit {
+export class PipesComponent  {
 
   date = new Date ()
   amount = 10000.3756
+  percent = 0.50
 
-  constructor() { }
+  //i18n select
+  personNumbers = '1'
 
-  ngOnInit(): void {
+  personNumbersMap = {
+    '1': 'invitarlo',
+    '2': 'invitarlos'
   }
 
 }

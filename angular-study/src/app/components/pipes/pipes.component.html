@@ -8,3 +8,6 @@
 <!-- the first position '1.2-2' in our case is "1" is for indicate that we want the integer amount but we can put '.2-2' as well -->
 <!-- '.2-2' is to indicate the rank of decimals -->
 <p>format number pipe: {{amount | number:'1.2-2'}}</p>
+<p>currency pipe: {{amount | currency:'USD':'symbol-narrow'}}</p>
+<p>percent pipe: {{percent | percent}}</p>
+<p>i18n select pipe: es un placer {{personNumbers | i18nSelect: personNumbersMap}}</p>
