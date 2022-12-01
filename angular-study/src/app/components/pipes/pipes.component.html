@@ -1,6 +1,6 @@
 <hr>
 <h1>pipes</h1>
-<br/>
+<br />
 <p>date normal: {{date | date}}</p>
 <p>format date: {{date | date:'MM/dd/YYYY'}}</p>
 <!-- the number pipe rounds the decimal amounts -->
@@ -11,3 +11,17 @@
 <p>currency pipe: {{amount | currency:'USD':'symbol-narrow'}}</p>
 <p>percent pipe: {{percent | percent}}</p>
 <p>i18n select pipe: es un placer {{personNumbers | i18nSelect: personNumbersMap}}</p>
+<p>i18n plural pipe: are you waiting for pillars? {{pillars.length | i18nPlural: pillarsMap}}</p>
+<!-- slice is for show a text or array only in certain indexs from 'start' to 'end'. But, 'end' is excluded from the selection -->
+<p>slice pipe: {{pillars | slice: 0:2}}</p>
+<!-- keyValue pipe is for iterate objects in the ui -->
+<p>keyValue pipe:</p>
+<ul>
+    <li *ngFor="let item of objectExample | keyvalue">
+        hello my {{item.key}} is {{item.value}}
+    </li>
+</ul>
+
+<!-- async pipe, subscribes to an observable and every change in the observable will be reflected on the screen -->
+
+<p>async pipe {{counterObservable | async}}</p>
