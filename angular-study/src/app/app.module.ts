@@ -16,6 +16,9 @@ import { ClassesManagementComponent } from './components/classes-management/clas
 import { RxjsComponent } from './components/rxjs/rxjs.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PipesComponent } from './components/pipes/pipes.component';
+import { LifeCycleHooksComponent } from './components/life-cycle-hooks/life-cycle-hooks.component';
+import { MessageDirectiveDirective } from './shared/directives/message-directive.directive';
+import { CustomDirectivesImplementationComponent } from './components/custom-directives-implementation/custom-directives-implementation.component';
 
 
 @NgModule({
@@ -28,6 +31,9 @@ import { PipesComponent } from './components/pipes/pipes.component';
     ClassesManagementComponent,
     RxjsComponent,
     PipesComponent,
+    LifeCycleHooksComponent,
+    MessageDirectiveDirective,
+    CustomDirectivesImplementationComponent,
   
   ],
   imports: [

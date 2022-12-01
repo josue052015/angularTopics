@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { DemonSlayer } from 'src/shared/models/demonSlayers.model';
+import { DemonSlayer } from 'src/app/shared/models/demonSlayers.model';
 
 @Component({
   selector: 'app-add-demon-slayer-form',

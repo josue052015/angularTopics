@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  
+  message = 'klk'
+  setMessage(){
+    this.message += 'a'
+    console.log('mes', this.message)
+  }  
 }

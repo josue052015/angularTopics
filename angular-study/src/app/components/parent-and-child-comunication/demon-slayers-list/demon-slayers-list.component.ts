@@ -1,6 +1,7 @@
 import { ParentAndChildComunicationService } from './../parent-and-child-comunication.service';
 import { Component, OnInit } from '@angular/core';
-import { DemonSlayer } from 'src/shared/models/demonSlayers.model';
+import { DemonSlayer } from 'src/app/shared/models/demonSlayers.model';
+
 
 @Component({
   selector: 'app-demon-slayers-list',

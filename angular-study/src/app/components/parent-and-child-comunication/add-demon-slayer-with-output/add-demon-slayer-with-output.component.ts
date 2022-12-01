@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { DemonSlayer } from 'src/shared/models/demonSlayers.model';
+import { DemonSlayer } from 'src/app/shared/models/demonSlayers.model';
+
 
 @Component({
   selector: 'app-add-demon-slayer-with-output',
